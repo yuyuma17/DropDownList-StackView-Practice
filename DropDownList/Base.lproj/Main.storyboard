@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,101 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDownList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XfT-so-Ipu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="257"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y5-4k-nck">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="mIH-aG-80p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Game List">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbA-S0-Mji"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ot-vJ-Wyb">
+                                        <rect key="frame" x="0.0" y="53" width="414" height="45"/>
+                                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="i8j-xh-zXy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Zelda - Breath of the Wild">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoa-ye-Dks">
+                                        <rect key="frame" x="0.0" y="106" width="414" height="45"/>
+                                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="0mt-hW-jlH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Mario Odyssey">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imq-Ky-Hz2">
+                                        <rect key="frame" x="0.0" y="159" width="414" height="45"/>
+                                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="54f-2M-rz8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Mario Kart 8 Deluxe">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-en-pgo">
+                                        <rect key="frame" x="0.0" y="212" width="414" height="45"/>
+                                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="MjJ-gH-6KW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Overcooked 2">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kL9-en-pgo" secondAttribute="trailing" id="78C-6d-bCj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Imq-Ky-Hz2" secondAttribute="trailing" id="9JE-YK-taq"/>
+                                    <constraint firstAttribute="trailing" secondItem="yoa-ye-Dks" secondAttribute="trailing" id="Gmh-nb-8ar"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Y5-4k-nck" secondAttribute="trailing" id="JMs-qx-l0H"/>
+                                    <constraint firstItem="kL9-en-pgo" firstAttribute="leading" secondItem="XfT-so-Ipu" secondAttribute="leading" id="JTn-kj-xSo"/>
+                                    <constraint firstItem="6ot-vJ-Wyb" firstAttribute="leading" secondItem="XfT-so-Ipu" secondAttribute="leading" id="WF3-nY-BOv"/>
+                                    <constraint firstAttribute="trailing" secondItem="6ot-vJ-Wyb" secondAttribute="trailing" id="YFs-9e-urZ"/>
+                                    <constraint firstItem="8Y5-4k-nck" firstAttribute="leading" secondItem="XfT-so-Ipu" secondAttribute="leading" id="crS-eG-Rgg"/>
+                                    <constraint firstItem="yoa-ye-Dks" firstAttribute="leading" secondItem="XfT-so-Ipu" secondAttribute="leading" id="oFi-zg-Eth"/>
+                                    <constraint firstItem="Imq-Ky-Hz2" firstAttribute="leading" secondItem="XfT-so-Ipu" secondAttribute="leading" id="umJ-ua-PVS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XfT-so-Ipu" secondAttribute="trailing" id="O8p-iz-YMQ"/>
+                            <constraint firstItem="XfT-so-Ipu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hAc-8r-yu5"/>
+                            <constraint firstItem="XfT-so-Ipu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tcu-b8-YeF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="options" destination="6ot-vJ-Wyb" collectionClass="NSMutableArray" id="hO2-99-4bF"/>
+                        <outletCollection property="options" destination="yoa-ye-Dks" collectionClass="NSMutableArray" id="w94-qO-4WS"/>
+                        <outletCollection property="options" destination="Imq-Ky-Hz2" collectionClass="NSMutableArray" id="IJd-wL-juY"/>
+                        <outletCollection property="options" destination="kL9-en-pgo" collectionClass="NSMutableArray" id="NGb-r8-VsZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
