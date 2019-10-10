@@ -10,18 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //4 Outlet Collection
     @IBOutlet var options: [UIButton]!
-    
-    @IBAction func showList(_ sender: UIButton) {
-        for option in options {
-            option.isHidden = !option.isHidden      //Opposite
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func showList(_ sender: UIButton) {
+        for option in options {
+            UIView.animate(withDuration: 0.5) {
+                option.isHidden = !option.isHidden
+                self.view.layoutIfNeeded()
+            }
+        }
     }
 }
 
